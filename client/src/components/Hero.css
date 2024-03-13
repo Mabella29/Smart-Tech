@@ -17,6 +17,10 @@
     height: 100vh;
     position: relative;
     z-index: -1;
+    background-image: url('../assets/images/1_yO9z0dXNUm9ZBLCGthMa6w.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
 
 .popup {
