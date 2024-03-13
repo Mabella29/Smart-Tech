@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-
 .navigation {
     display: flex;
     flex-direction: row;
@@ -42,12 +40,6 @@
     font-size: 15px;
 }
 
-.hamburger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
 
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -55,12 +47,6 @@ h1 {
     color: #ff0000;
     position: relative;
     top: 5px;
-}
-
-.navContainer {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
 }
 
 .logo {
@@ -82,14 +68,18 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
     border-radius: 35px;
     color: #fefefe;
     cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 .free-btn:hover {
     transition: all 1.3s ease;
     background-color: rgb(1, 114, 56);
+   
 }
 
 .free-btn .links {
@@ -108,4 +98,46 @@ h1 {
     width: 1px;
     height: 15px;
     background: #000000;
+}
+
+.navContainer {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        width: 100%;
+        height: 5em;
+        background: #fcd;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .navContainer {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 200px;
+        height: 100px;
+        
+
+    }
+
+    .hamburger {
+            display: flex;
+            justify-content: space-around;
+            align-items: cente r;
+            gap: 20px;
+            width: 100px;
+            height: 20px;
+           
+    }
+
 }
