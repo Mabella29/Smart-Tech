@@ -17,23 +17,26 @@ class Navbar extends Component {
         !this.state.clicked})
     };
         render () {
-    const linkClassName = 'nav-list';
+    
     return (
         <>
             <nav className="navigation">
-            {/* <div className='navContainer'>
+            <div className='navContainer'>
                 <div className='hamburger' onClick={this.handClick}>
                     <i className={this.state.clicked ? 
                     'fa fa-times' :'fa fa-bars' }
                         style={{
                                color: 'rgb(019, 170, 150)',
-                               fontSize: '200px',
+                               fontSize: '20px',
                                fontWeight: '900',
+                               width: '100%',
+                               height: '50%',
+                               backgroundColor: '#000000',
                                }}
                     ></i>
                 </div>
                
-            </div> */}
+            </div>
 
                 <div className="logo">
                     <Link to="/"
@@ -75,7 +78,7 @@ class Navbar extends Component {
                         </h1>
                     </Link>
                 </div>
-                <div className=''>
+                <div className='nav-item'>
                 
 
                 <ul id="nav-items" className={this.state.clicked ? 
@@ -89,13 +92,13 @@ class Navbar extends Component {
                     <li className='' id=''><Link to='/'className='links'>About Us</Link></li>
                     <li className='' id=''><Link to='/' className='links'>Services</Link></li>
                     <li className='' id=''><Link to='/' className='links'>Gallary</Link></li>
-                    <li className='free-btn' id=''><Link to='/' className='links'>Solution</Link></li>
+                    <li className='free-btn' id=''><Link to='/' className='links'>Contact Us </Link></li>
                     
                     {/* <li className='search'><FontAwesomeIcon icon={faAbout} size='sm' /></li> */}
                 </ul>
                 </div> 
                 <div className="icons">
-                    <FontAwesomeIcon icon="fa-solid fa-phone" />
+                    <FontAwesomeIcon icon="fa-solid fa-message" />
                     <div className='gh'> </div>
                     <strong>GH</strong>
 
