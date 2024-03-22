@@ -1,8 +1,8 @@
 .main-container {
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
+    
 }
 
 .cont1 {
@@ -12,7 +12,6 @@
 }
 
 .cont2 {
-    background-color: aqua;
     width: 50%;
     height: 100vh;
     position: relative;
@@ -73,4 +72,38 @@
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
     transition: all 0.2s ease-in-out;
     background-color: rgb(1, 114, 56);
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        width: 100%;
+        backghround: #cdffff;
+    }
+    .cont2 {
+        display: none;
+    }
+
+        .cont1 {
+            width: 90.8%;
+            
+        }
+
+    .popup {
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+        padding-top: 120px;
+        background-image: url('../assets/backicons/Picture2.png');
+        background-repeat: no-repeat;
+        background-position-x: 50px;
+        background-position-y: 570px ;
+    }
+
+    .description  {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 50px 0 0 0;
+        text-align: left;
+    }
 }
