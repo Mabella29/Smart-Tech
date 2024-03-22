@@ -101,9 +101,6 @@ h1 {
 
 
 
-@media (max-width: 480px) {
-
-
     .navigation {
         
         display: flex;
@@ -127,9 +124,9 @@ h1 {
     #nav-items {
         align-items: flex-start;
         margin-left: -20px;
-
+       
     }
-
+    
     .logo {
         padding-left: 35px;
     }
