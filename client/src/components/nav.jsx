@@ -1,44 +1,20 @@
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
-import { faFacebookF, faGithub, faTwitter} from '@fortawesome/free-brands-svg-icons';
-import { faSearch} from '@fortawesome/free-solid-svg-icons';
-import {  } from '@fortawesome/free-regular-svg-icons';
-import React, { Component } from 'react';
-import  './nav.css'
+import "./nav.css";
+import { Link, NavLink } from "react-router-dom";
 
-class Navbar extends Component {
-    state = {clicked: false};
-    handClick = () => {
-        this.setState({clicked:
-        !this.state.clicked})
-    };
-        render () {
-    
-    return (
-        <>
-            <nav className="navigation">
-            <div className='navContainer'>
-                <div className='hamburger' onClick={this.handClick}>
-                    <i className={this.state.clicked ? 
-                    'fa fa-times' :'fa fa-bars' }
-                        style={{
-                               color: 'rgb(019, 170, 150)',
-                               fontSize: '20px',
-                               fontWeight: '900',
-                               width: '100%',
-                               height: '50%',
-                               backgroundColor: '#000000',
-                               }}
-                    ></i>
-                </div>
-               
-            </div>
+export const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const linkClassName = 'nav-list'
 
-                <div className="logo">
+  return (
+    <nav className="navigation">
+      
+        <div className="logo">
                     <Link to="/"
                         style={{
                             display: 'flex',
@@ -78,39 +54,31 @@ class Navbar extends Component {
                         </h1>
                     </Link>
                 </div>
-                <div className='nav-item'>
-                
-
-                <ul id="nav-items" className={this.state.clicked ? 
-                'nav-items active' : 'nav-items'}>
-                    {/* <li className={linkClassName}><Link to='/'><FontAwesomeIcon icon={faFacebookF} size='lg' style={{color: "#FF0000",}} /></Link></li>
-                    <li className={linkClassName}><Link to='/'><FontAwesomeIcon icon={faGithub} size='lg' style={{color: "#FF0000",}} /></Link></li>
-                    <li className={linkClassName}><Link to='/'><FontAwesomeIcon icon={faTwitter} size='lg' style={{color: "#FF0000",}} /></Link></li> */}
-                    {/* <li className='search'><FontAwesomeIcon icon={faSearch} size='sm' /></li> */}
-                    <li className='' id=''><Link to='/' className='links'>Home</Link></li>
-                    <li className='' id=''><Link to='/' className='links'>Solution</Link></li>
-                    <li className='' id=''><Link to='/'className='links'>About Us</Link></li>
-                    <li className='' id=''><Link to='/' className='links'>Services</Link></li>
-                    <li className='' id=''><Link to='/' className='links'>Gallary</Link></li>
+      
+      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div className="nav-item">
+            <ul id="nav-items" className={menuOpen ? "open" : ""}>
+                <li className={linkClassName} id=''><Link to='/' className='links'>Home</Link></li>
+                    <li className={linkClassName} id=''><Link to='/' className='links'>Solution</Link></li>
+                    <li className={linkClassName} id=''><Link to='/'className='links'>About Us</Link></li>
+                    <li className={linkClassName} id=''><Link to='/' className='links'>Services</Link></li>
+                    <li className={linkClassName} id=''><Link to='/' className='links'>Gallery</Link></li>
                     <li className='free-btn' id=''><Link to='/' className='links'>Contact Us </Link></li>
-                    
-                    {/* <li className='search'><FontAwesomeIcon icon={faAbout} size='sm' /></li> */}
-                </ul>
-                </div> 
-                <div className="icons">
+            </ul>
+      </div>
+      <div className="icons">
                     <FontAwesomeIcon icon="fa-solid fa-message" />
                     <div className='gh'> </div>
                     <strong>GH</strong>
-
-                   
-                </div> 
-            </nav>
-          
-        </>
-    )
-}
-}
-    
+        </div> 
+      
+    </nav>
+  );
+};
 
 export default Navbar;
 library.add(fab, fas, far);
