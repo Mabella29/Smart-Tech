@@ -61,12 +61,12 @@ export const Navbar = () => {
         <span></span>
       </div>
       <div className="nav-item">
-            <ul id="nav-items items" className={menuOpen ? "open" : ""}>
+            <ul id="nav-items" className={menuOpen ? "open" : ""}>
                 <li className={linkClassName} id=''><Link to='/' className='links'>Home</Link></li>
                     <li className={linkClassName} id=''><Link to='/' className='links'>Solution</Link></li>
                     <li className={linkClassName} id=''><Link to='/'className='links'>About Us</Link></li>
                     <li className={linkClassName} id=''><Link to='/' className='links'>Services</Link></li>
-                    <li className={linkClassName} id=''><Link to='/' className='links'>Gallary</Link></li>
+                    <li className={linkClassName} id=''><Link to='/' className='links'>Gallery</Link></li>
                     <li className='free-btn' id=''><Link to='/' className='links'>Contact Us </Link></li>
             </ul>
       </div>
