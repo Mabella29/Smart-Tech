@@ -1,11 +1,12 @@
-.navigation {
+/* .navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100vw;
+  
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     padding: 0 10px;
     background: #fefefe;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
@@ -22,7 +23,7 @@
 
 
 .navigation ul li {
-    list-style: none;
+   list-style: none;
 }
 
 h1 {
@@ -33,7 +34,7 @@ h1 {
     top: 5px;
 }
 
-.free-btn .links {
+.free-btn .links  {
     width: 150px;
     height: 40px;
     background-color: rgb(0, 142, 69);
@@ -78,11 +79,11 @@ h1 {
 
 .navigation ul {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space-around;
-    margin: 1em;
-    align-items: center;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-around;
+        margin: 1em;
+        align-items: center;
 }
 
 .icons {
@@ -101,32 +102,21 @@ h1 {
 
 
 
-
 @media (max-width: 480px) {
-    
-
-    .navigation {
-        
+    .navigation .menu {
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        background: rgb(255, 255, 255);
-        /* background-image: url('../assets/images/1_yO9z0dXNUm9ZBLCGthMa6w.jpg');
-        background-repeat: no-repeat; */
-        width: 100%;
-        padding: 20px;
-       
+        margin: 15px;
     }
 
-        .navigation .menu {
-            display: flex;
-            margin: 12px 45px 0 0;
-        }
-
-    #nav-items {
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         align-items: flex-start;
-        margin-left: -20px;
+        background: #ffffff;
+        width: 100%;
+        padding: 20px;
        
     }
     
@@ -137,8 +127,7 @@ h1 {
     .icons {
         display: none;
     }
-
-    .navigation ul {
+   .navigation ul {
         display: none;
         gap: 20px;
         justify-content: flex-start;
@@ -146,8 +135,8 @@ h1 {
         align-items: center;
         flex-direction: column;
         width: 75vw;
-
-
+        
+       
     }
 
     .navigation ul.open {
@@ -157,20 +146,20 @@ h1 {
 
     }
 
-    .navigation ul li {
+   .navigation ul li {
         width: 100%;
         text-align: center;
         font-size: 1.5em;
         width: 200px;
-        
     }
 
     .navigation ul li a {
         margin: 0.2rem 0.5rem;
-        color: #000000;
     }
+
+
 
     .free-btn {
         display: none;
     }
-}
+} */
