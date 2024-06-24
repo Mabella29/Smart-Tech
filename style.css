@@ -11,9 +11,11 @@ header {
     padding-right: 8%;
 }
 
-.logo {
-    width: 50px;
+.logo img {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
 
 .nav-bar {
     display: flex;
