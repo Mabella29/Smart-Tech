@@ -36,7 +36,7 @@ header {
 
 .hero-section{
     position: relative;
-    background: url("/images/hero.jpg");
+    background: url("images/Image\ \(1\).png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -204,7 +204,7 @@ svg {
   display: flex;
 }
 .hero-section {
-  background: url("/images/heromob.jpg");
+  background: url("images/mob.png");
   background-size: cover;
   background-position: center;
 
