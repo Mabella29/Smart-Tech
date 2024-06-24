@@ -11,17 +11,13 @@ header {
     padding-right: 8%;
 }
 
-.logo img {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 
 .nav-bar {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    padding: 5px;
 }
 
 .menu ul li{
